@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Simple Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .project {
+            flex: 1 1 calc(33% - 20px);
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #007BFF;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 768px) {
+            .project {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Simple Portfolio</h1>
+    </header>
+    <div class="container">
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hello! My name is Jai, I am a beginner web developer. This portfolio is my own creation using HTML, CSS, and JavaScript.</p>
+        </section>
+        <section class="projects">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>A simple to-do list app.</p>
+                <button onclick="alert('This is a simple to-do list app project made by me.')">Learn More</button>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>A basic calculator.</p>
+                <button onclick="alert('This is a basic calculator project made by me.')">Learn More</button>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>A personal blog template.</p>
+                <button onclick="alert('This is a personal blog template project made by me.')">Learn More</button>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>© 2025 My Simple Portfolio</p>
+    </footer>
+</body>
+</html>
